@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #B0B0B0;
+  background: #eee;
 }
 
 h1 {
@@ -16,51 +16,20 @@ h1 {
 /* toolbar stuff */
 
 #toolbar {
-  background-color: #F5F5F5;
+  background-color: #eee;
   width: 300px;
   height: 30px;
   margin-left: 50px;
-  border-radius: 5px;
 }
 
-#b {
-  background-color: #fff;
-  width: 30px;
-  height: 20px;
-  text-align: center;
+#toolbar button {
+  border-radius: 0px;
+  border-color: 1px solid black;
   color: black;
-  border-radius: 50px;
-  margin: 5px;
-}
-
-#i {
   background-color: #fff;
-  width: 30px;
-  height: 20px;
-  text-align: center;
-  color: black;
-  border-radius: 50px;
   margin: 5px;
-}
-
-#u {
-  background-color: #fff;
-  width: 30px;
-  height: 20px;
   text-align: center;
-  color: black;
-  border-radius: 50px;
-  margin: 5px;
-}
-
-#save {
-  background-color: #fff;
-  width: 100px;
   height: 20px;
-  text-align: center;
-  color: black;
-  border-radius: 50px;
-  margin: 5px;
 }
 
 /* end toolbar, begin text box */
@@ -70,4 +39,5 @@ h1 {
   height: 600px;
   margin-top: 20px;
   margin-left: 50px;
+  background-color: #fff;
 }
