@@ -11,12 +11,15 @@
 </head>
 
 <body>
-<h1>Text Editor</h1>
-<nav id="toolbar">
-  <button id="b" onclick="bold"><b>B<b></button></li>
-  <button id="i" onclick="italics"><i>I</i></button></li>
-  <button id="u" onclick="underline"><u>U</u></button></li>
-  <button id="save" onclick="save">Save your work</button></li>
-</nav>
-<textarea id="mainbox"></textarea>
+  <h1>Text Editor</h1>
+  <nav id="toolbar">
+    <button id="b" onclick="bold();"><b>B</b></button>
+    <button id="i" onclick="italics();"><i>I</i></button>
+    <button id="u" onclick="underline();"><u>U</u></button>
+    <button id="save" onclick="save">Save your work</button>
+  </nav>
+
+  <div contenteditable="true" id="mainbox"></div>
+  <!--div[contenteditable="true"] (not textarea) so we can insert <b> <i> and <u> styling elements -->
+  <!-- Ah okay, cool! -->
 </body>
