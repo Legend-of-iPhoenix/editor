@@ -3,7 +3,7 @@ function bold() {
   document.execCommand("bold", false);
 }
 
-function italic() {
+function italics() {
   document.execCommand("italic", false);
 }
 
