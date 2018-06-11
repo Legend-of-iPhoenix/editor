@@ -12,7 +12,7 @@ function underline() {
 }
 
 function reformat() {
-  document.execCommand("bold", true);
-  document.execCommand("italic", true);
-  document.execCommand("underline", true);
+  document.execCommand("bold", false);
+  document.execCommand("italic", false);
+  document.execCommand("underline", false);
 }
