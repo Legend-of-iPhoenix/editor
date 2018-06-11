@@ -11,10 +11,18 @@ function underline() {
   document.execCommand("underline", false);
 }
 
-function reformat() {
-  var text = e.dataTransfer.getData("text/plain");
-  
-  document.execCommand("bold", text);
-  document.execCommand("italic", text);
-  document.execCommand("underline", text);
-}
+/* function reformat() {
+  var element = document.getElementById("mainbox");
+  element.classList.toggle("reformat");
+  if (element.classList) { 
+  } else {
+      var classes = element.className.split(" ");
+      var i = classes.indexOf("mystyle");
+
+      if (i >= 0) 
+          classes.splice(i, 1);
+      else 
+          classes.push("mystyle");
+          element.className = classes.join(" "); 
+  }
+} */
