@@ -74,5 +74,6 @@ h1 {
   border: 1px solid;
   background-image: url(https://github.com/jcgter777/TextEditOnline/blob/master/docs/imgs/notepad.png?raw=true);
   overflow: auto;
+  outline: none;
   background-repeat: repeat;
 }
