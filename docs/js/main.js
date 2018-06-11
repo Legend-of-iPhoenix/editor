@@ -10,3 +10,9 @@ function italics() {
 function underline() {
   document.execCommand("underline", false);
 }
+
+function reformat() {
+  document.execCommand("bold", true);
+  document.execCommand("italic", true);
+  document.execCommand("underline", true);
+}
