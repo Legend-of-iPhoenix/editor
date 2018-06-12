@@ -11,6 +11,11 @@ function underline() {
   document.execCommand("underline", false);
 }
 
+function toggleformat() {
+  document.execCommand("bold", false);
+  document.execCommand("italic", false);
+  document.execCommand("underline", false);
+}  
 /* function reformat() {
   var element = document.getElementById("mainbox");
   element.classList.toggle("reformat");
