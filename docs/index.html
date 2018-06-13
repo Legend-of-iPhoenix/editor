@@ -10,16 +10,18 @@
 </head>
 
 <body spellcheck="false">
-  <h1>Text Editor</h1>
+  <h1>Text Editor</h1> <button id="repo" href="https://github.com/jcgter777/TextEditOnline/tree/master">GitHub Repository</button>
   <nav id="toolbar">
     <button id="b" onclick="bold();"><b>B</b></button>
     <button id="i" onclick="italics();"><i>I</i></button>
     <button id="u" onclick="underline();"><u>U</u></button>
-    <button id="reformat" onclick="roggleformat();">Toggle all formatting</button>
+    <button id="reformat" onclick="toggleformat();">Toggle all formatting</button>
     <button id="save" onclick="save();">Save</button>
   </nav>
 
   <div contenteditable="true" id="mainbox"></div>
-  <!--div[contenteditable="true"] (not textarea) so we can insert <b> <i> and <u> styling elements -->
+  
+  
+  
 </body>
 </html>
