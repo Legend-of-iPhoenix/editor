@@ -1,4 +1,5 @@
 
+
 function bold() {
   document.execCommand("bold", false);
 }
@@ -16,3 +17,16 @@ function toggleformat() {
   document.execCommand("italic", true);
   document.execCommand("underline", true);
 }  
+
+var windowObjectReference = null; 
+
+function openRepo() {
+  if (windowObjectReference == null || windowObjectReference.closed)
+    
+    windowObjectReference = window.open("/",
+      "repoPage", "resizable,scrollbars,status");
+  
+  } else {
+    windowObjectReference.focus();
+  };
+}
