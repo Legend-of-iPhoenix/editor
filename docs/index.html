@@ -10,7 +10,7 @@
 </head>
 
 <body spellcheck="false">
-  <h1>Text Editor <button id="repo" onclick="location.href='https://github.com/jcgter777/TextEditOnline/tree/master'" type="button"><img id="logo" src="https://github.com/jcgter777/TextEditOnline/blob/master/docs/imgs/github.png?raw=true" alt="GitHub logo" width="20" height="20">&nbsp;GitHub Repository&nbsp;</button></h1>
+  <h1>Text Editor <button id="repo" onclick="openRepo(); return false;" type="button"><img id="logo" src="https://github.com/jcgter777/TextEditOnline/blob/master/docs/imgs/github.png?raw=true" alt="GitHub logo" width="20" height="20">&nbsp;GitHub Repository&nbsp;</button></h1>
   <nav id="toolbar">
     <button id="b" onclick="bold();"><b>B</b></button>
     <button id="i" onclick="italics();"><i>I</i></button>
@@ -21,7 +21,17 @@
 
   <div contenteditable="true" id="mainbox"></div>
   
-  
-  
+  <script type="text/javascript">
+    var windowObjectReference = null;
+    function openRepo() {
+      if (windowObjectReference == null || windowObjectReference.closed)
+      {
+        windowObjectReference = window.open("/TheButton/about/",
+          "repoPage", "resizable,scrollbars,status");
+      } else {
+        windowObjectReference.focus();
+      };
+    }
+  </script>
 </body>
 </html>
