@@ -25,7 +25,7 @@ h1 {
 #toolbar button {
   transition: all .2s;
   color: #000;
-  background-color: #DCDCDC;
+  background-color: #fff;
   padding: 7px 25px;
   border: 1px solid white;
   vertical-align: center;
@@ -41,16 +41,21 @@ h1 {
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
           box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: 3px 3px 3px grey;
+
 }
 
 #toolbar button:hover {
-  box-shadow: 3px 3px 3px grey;
   cursor: pointer;
   border-radius: 45px;
+  border: 1px solid #fff;
   background-color: rgb(204, 255, 255);
-  border: none;
   box-shadow: 0px 20px 20px  grey;
-  transform: translateY(-7px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: 3px 3px 3px grey;
 }
 
 #toolbar button:active {
@@ -60,6 +65,7 @@ h1 {
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
           box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: 1px 1px 1px grey;
 }
 /* end toolbar, begin text box */
 
@@ -78,6 +84,7 @@ h1 {
   line-height: 17px;
   background-repeat: repeat;
 }
+
 /* Orginal here:
 #mainbox {
   width: 620px;
