@@ -1,6 +1,7 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   margin: auto auto;
+  outline: none;
 }
 
 body {
@@ -11,6 +12,23 @@ h1 {
   margin: 20px;
   margin-left: 50px;
   text-align: left;
+}
+
+#repo {
+  text-decoration: none;
+  font-size: 45%;
+  margin: auto auto;
+  padding: 5px;
+  text-align: center;
+  padding-bottom: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #dadada;
+  float: right;
+}
+
+#repo img {
+  vertical-align: middle;
 }
 
 /* toolbar stuff */
@@ -37,7 +55,6 @@ h1 {
   border-radius: 45px;
   transition: all 0.2s ease 0s;
   cursor: pointer;
-  outline: none;
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
           box-shadow: inset 0px 0px 5px #c1c1c1;
@@ -72,6 +89,7 @@ h1 {
 #toolbar button.inUse {
   background-color: rgb(241, 243, 243);  
 }
+
 /* end toolbar, begin text box */
 
 #mainbox {
@@ -85,7 +103,6 @@ h1 {
   background-image: url(http://lundentreux.info/infographie/Effetsfiltre/U/ulimitedpaperbackground/Paper%20Background%20-%20Canvas,%20Nature,%20Coarse.jpg);
   background-size: 100% 17px;
   overflow: auto;
-  outline: none;
   line-height: 17px;
   background-repeat: repeat;
 }
@@ -103,7 +120,6 @@ h1 {
   background-image: linear-gradient(red 1px, aliceblue 2px);
   background-size: 100% 14px;
   overflow: auto;
-  outline: none;
   line-height: 14px;
   background-repeat: repeat;
 }
