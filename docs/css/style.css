@@ -50,8 +50,8 @@ h1 {
   border-radius: 45px;
   border: 1px solid #fff;
   background-color: rgb(204, 255, 255);
-  /* box-shadow: 0px 20px 20px  grey; */
-  transform: translateY(-5px);
+  box-shadow: 0px 20px 20px  grey;
+  /* transform: translateY(-5px); */
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
           box-shadow: inset 0px 0px 5px #c1c1c1;
