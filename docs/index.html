@@ -12,9 +12,14 @@
 <body spellcheck="false">
   <h1>Text Editor <button id="repo" onclick="openRepo(); return false;" type="button"><img id="logo" src="https://github.com/jcgter777/TextEditOnline/blob/master/docs/imgs/github.png?raw=true" alt="GitHub logo" width="20" height="20">&nbsp;GitHub Repository&nbsp;</button></h1>
   <nav id="toolbar">
-    <button id="b" onclick="bold();"><b>B</b></button>
-    <button id="i" onclick="italics();"><i>I</i></button>
-    <button id="u" onclick="underline();"><u>U</u></button>
+    <button id="b" onclick="format('bold');"><b>B</b></button>
+    <button id="i" onclick="format('italics');"><i>I</i></button>
+    <button id="u" onclick="format('underline');"><u>U</u></button>
+    <button id="sub" onclick="format('subscript');">Text<sub>2</sub></button>
+    <button id="super" onclick="format('superscript');">Text<sup>2</sup></button>   
+    <button id="h1" onclick="headingOne();">Heading 1</button>
+    <button id="h1" onclick="headingTwo();">Heading 2</button>
+    <button id="h1" onclick="headingThree();">Heading 3</button>  
     <button id="reformat" onclick="toggleformat();">Toggle all formatting</button>
     <button id="save" onclick="save();">Save</button>
   </nav>
