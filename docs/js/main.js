@@ -40,5 +40,8 @@ window.onkeydown = function(event) {
 function toggleformat() {
   document.execCommand("bold", true);
   document.execCommand("italic", true);
-  document.execCommand("underline", true);
+  document.execCommand("subscript", true);
+  document.execCommand("superscript", true);
+  document.execCommand("strikethrough", true);
+
 }  
