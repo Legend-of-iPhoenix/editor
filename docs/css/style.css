@@ -17,9 +17,10 @@ h1 {
 
 #toolbar {
   background-color: #eee;
-  width: 300px;
+  width: 100%;
   height: 30px;
   margin-left: 50px;
+  position: sticky;
 }
 
 #toolbar button {

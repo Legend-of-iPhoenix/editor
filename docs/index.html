@@ -13,10 +13,13 @@
 <body spellcheck="false">
   <h1>Text Editor</h1>
   <nav id="toolbar">
-    <button id="b" onclick="bold();"><b>B</b></button>
-    <button id="i" onclick="italics();"><i>I</i></button>
-    <button id="u" onclick="underline();"><u>U</u></button>
-    <button id="save" onclick="save">Save your work</button>
+    <button id="b" onclick="format('bold');"><b>B</b></button>
+    <button id="i" onclick="format('italics');"><i>I</i></button>
+    <button id="u" onclick="format('underline');"><u>U</u></button>
+    <button id="sub" onclick="format('subscript');">Text<sub>2</sub></button>
+    <button id="super" onclick="format('superscript');">Text<sup>2</sup></button>
+    <button id="heading" onclick="heading();">H1</button>
+    <button id="save" onclick="save">Save your work (unimplemented)</button>
   </nav>
 
   <div contenteditable="true" id="mainbox"></div>
